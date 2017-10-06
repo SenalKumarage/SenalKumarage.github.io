@@ -61,6 +61,7 @@
   border: 3px solid #ccc;
   border-radius: 2px;
   -webkit-font-smoothing: antialiased;
+  cursor: pointer;
 }
 
 strong {
@@ -81,8 +82,14 @@ html, body {
 <body>
 	<div class="test">
 	  <div class="overlay"></div>
-	  <div class="text">senal <strong>KUMARAGE</strong></div>
+	  <div onclick="gotoBlog()" class="text">senal <strong>KUMARAGE</strong></div>
 	</div>
 </body>
+
+<script>
+  function gotoBlog() {
+    window.location.href = "https://softpediaweb.wordpress.com/";
+  }
+</script>
 
 </html>
